@@ -1,0 +1,580 @@
+couldn't open "transcript": permission denied
+# Reading pref.tcl
+# //  Questa Sim-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+
+
+pwd
+# C:/questasim64_2023.3/examples
+cd {\\thoth.cecs.pdx.edu\Home01\srisaiy\Downloads\team_8_Async_FIFO\team_8_Async_FIFO\M1\CLASS}
+do run.do
+# QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 23:55:10 on Apr 24,2024
+# vlog -reportprogress 300 fifo_memory.sv 
+# -- Compiling module FIFO_memory
+# 
+# Top level modules:
+# 	FIFO_memory
+# End time: 23:55:10 on Apr 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 23:55:10 on Apr 24,2024
+# vlog -reportprogress 300 r_pointer_empty.sv 
+# -- Compiling module read_ptr_empty
+# 
+# Top level modules:
+# 	read_ptr_empty
+# End time: 23:55:10 on Apr 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 23:55:10 on Apr 24,2024
+# vlog -reportprogress 300 sync_r2w_w2r.sv 
+# -- Compiling module sync_r2w
+# -- Compiling module sync_w2r
+# 
+# Top level modules:
+# 	sync_r2w
+# 	sync_w2r
+# End time: 23:55:11 on Apr 24,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 23:55:11 on Apr 24,2024
+# vlog -reportprogress 300 w_pointer_full.sv 
+# -- Compiling module write_ptr_full
+# 
+# Top level modules:
+# 	write_ptr_full
+# End time: 23:55:11 on Apr 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 23:55:11 on Apr 24,2024
+# vlog -reportprogress 300 testbench.sv 
+# -- Compiling module async_fifo_tb
+# 
+# Top level modules:
+# 	async_fifo_tb
+# End time: 23:55:11 on Apr 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 23:55:11 on Apr 24,2024
+# vlog -reportprogress 300 ASYNC_FIFO_top.sv 
+# -- Compiling module Asynch_FIFO
+# 
+# Top level modules:
+# 	Asynch_FIFO
+# End time: 23:55:11 on Apr 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 23:55:11 on Apr 24,2024
+# vlog -reportprogress 300 testbench.sv 
+# -- Compiling module async_fifo_tb
+# 
+# Top level modules:
+# 	async_fifo_tb
+# End time: 23:55:12 on Apr 24,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -c async_fifo_tb -gADDRSIZE=456 
+# Start time: 23:55:12 on Apr 24,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-3040) Command line generic/parameter "ADDRSIZE" not found in design.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.async_fifo_tb(fast)
+# End time: 23:55:24 on Apr 24,2024, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 1
+# vsim work.async_fifo_tb 
+# Start time: 23:55:24 on Apr 24,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.async_fifo_tb(fast)
+# End time: 23:55:31 on Apr 24,2024, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.async_fifo_tb 
+# Start time: 23:55:31 on Apr 24,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.async_fifo_tb(fast)
+# Loading work.Asynch_FIFO(fast)
+# Loading work.sync_r2w(fast)
+# Loading work.sync_w2r(fast)
+# Loading work.FIFO_memory(fast)
+# Loading work.read_ptr_empty(fast)
+# Loading work.write_ptr_full(fast)
+# Checking read_data: expected write_data =  73, read_data =  73
+# Checking read_data: expected write_data = 122, read_data = 122
+# Checking read_data: expected write_data = 126, read_data = 126
+# Checking read_data: expected write_data = 218, read_data = 218
+# Checking read_data: expected write_data =  78, read_data =  78
+# Checking read_data: expected write_data =   2, read_data =   2
+# Checking read_data: expected write_data = 155, read_data = 155
+# Checking read_data: expected write_data = 217, read_data = 217
+# Checking read_data: expected write_data =  76, read_data =  76
+# Checking read_data: expected write_data =  87, read_data =  87
+# Checking read_data: expected write_data = 155, read_data = 155
+# Checking read_data: expected write_data = 207, read_data = 207
+# Checking read_data: expected write_data = 243, read_data = 243
+# Checking read_data: expected write_data =  70, read_data =  70
+# Checking read_data: expected write_data =  16, read_data =  16
+# Checking read_data: expected write_data = 128, read_data = 128
+# Checking read_data: expected write_data = 216, read_data = 216
+# Checking read_data: expected write_data =  44, read_data =  44
+# Checking read_data: expected write_data = 136, read_data = 136
+# Checking read_data: expected write_data =   7, read_data =   7
+# Checking read_data: expected write_data = 227, read_data = 227
+# Checking read_data: expected write_data = 243, read_data = 243
+# Checking read_data: expected write_data =  80, read_data =  80
+# Checking read_data: expected write_data = 226, read_data = 226
+# Checking read_data: expected write_data = 115, read_data = 115
+# Checking read_data: expected write_data = 187, read_data = 187
+# Checking read_data: expected write_data = 252, read_data = 252
+# Checking read_data: expected write_data = 174, read_data = 174
+# Checking read_data: expected write_data = 207, read_data = 207
+# Checking read_data: expected write_data = 182, read_data = 182
+# Checking read_data: expected write_data = 199, read_data = 199
+# Checking read_data: expected write_data =  55, read_data =  55
+# Checking read_data: expected write_data =  26, read_data =  26
+# Checking read_data: expected write_data = 136, read_data = 136
+# Checking read_data: expected write_data = 123, read_data = 123
+# Checking read_data: expected write_data = 132, read_data = 132
+# Checking read_data: expected write_data =  12, read_data =  12
+# Checking read_data: expected write_data = 186, read_data = 186
+# Checking read_data: expected write_data = 185, read_data = 185
+# Checking read_data: expected write_data =  72, read_data =  72
+# Checking read_data: expected write_data = 249, read_data = 249
+# Checking read_data: expected write_data = 144, read_data = 144
+# Checking read_data: expected write_data = 144, read_data = 144
+# Checking read_data: expected write_data = 253, read_data = 253
+# Checking read_data: expected write_data = 219, read_data = 219
+# Checking read_data: expected write_data = 110, read_data = 110
+# Checking read_data: expected write_data = 185, read_data = 185
+# Checking read_data: expected write_data = 163, read_data = 163
+# Checking read_data: expected write_data =  78, read_data =  78
+# Checking read_data: expected write_data = 111, read_data = 111
+# Checking read_data: expected write_data = 154, read_data = 154
+# Checking read_data: expected write_data = 137, read_data = 137
+# Checking read_data: expected write_data = 181, read_data = 181
+# Checking read_data: expected write_data = 123, read_data = 123
+# Checking read_data: expected write_data =  88, read_data =  88
+# Checking read_data: expected write_data = 142, read_data = 142
+# Checking read_data: expected write_data = 168, read_data = 168
+# Checking read_data: expected write_data = 137, read_data = 137
+# Checking read_data: expected write_data = 172, read_data = 172
+# Checking read_data: expected write_data = 165, read_data = 165
+# Checking read_data: expected write_data =  33, read_data =  33
+# Checking read_data: expected write_data = 157, read_data = 157
+# Checking read_data: expected write_data = 246, read_data = 246
+# Checking read_data: expected write_data = 169, read_data = 169
+# Checking read_data: expected write_data = 167, read_data = 167
+# Checking read_data: expected write_data = 115, read_data = 115
+# Checking read_data: expected write_data = 118, read_data = 118
+# Checking read_data: expected write_data =   8, read_data =   8
+# Checking read_data: expected write_data =  98, read_data =  98
+# Checking read_data: expected write_data = 217, read_data = 217
+# Checking read_data: expected write_data =  94, read_data =  94
+# Checking read_data: expected write_data = 145, read_data = 145
+# Checking read_data: expected write_data = 112, read_data = 112
+# Checking read_data: expected write_data = 147, read_data = 147
+# Checking read_data: expected write_data =  36, read_data =  36
+# Checking read_data: expected write_data = 207, read_data = 207
+# Checking read_data: expected write_data =   4, read_data =   4
+# Checking read_data: expected write_data = 191, read_data = 191
+# Checking read_data: expected write_data = 157, read_data = 157
+# Checking read_data: expected write_data =  97, read_data =  97
+# Checking read_data: expected write_data =  65, read_data =  65
+# Checking read_data: expected write_data = 145, read_data = 145
+# Checking read_data: expected write_data =  44, read_data =  44
+# Checking read_data: expected write_data =  32, read_data =  32
+# Checking read_data: expected write_data = 153, read_data = 153
+# Checking read_data: expected write_data =   1, read_data =   1
+# Checking read_data: expected write_data =  78, read_data =  78
+# Checking read_data: expected write_data = 142, read_data = 142
+# Checking read_data: expected write_data = 134, read_data = 134
+# Checking read_data: expected write_data = 140, read_data = 140
+# Checking read_data: expected write_data =  11, read_data =  11
+# Checking read_data: expected write_data =  68, read_data =  68
+# Checking read_data: expected write_data = 148, read_data = 148
+# Checking read_data: expected write_data =  27, read_data =  27
+# Checking read_data: expected write_data =  39, read_data =  39
+# Checking read_data: expected write_data = 142, read_data = 142
+# Checking read_data: expected write_data = 121, read_data = 121
+# Checking read_data: expected write_data =  76, read_data =  76
+# Checking read_data: expected write_data = 161, read_data = 161
+# Checking read_data: expected write_data =  93, read_data =  93
+# Checking read_data: expected write_data =  35, read_data =  35
+# Checking read_data: expected write_data = 189, read_data = 189
+# Checking read_data: expected write_data = 255, read_data = 255
+# Checking read_data: expected write_data =  35, read_data =  35
+# Checking read_data: expected write_data = 249, read_data = 249
+# Checking read_data: expected write_data = 187, read_data = 187
+# Checking read_data: expected write_data =  48, read_data =  48
+# Checking read_data: expected write_data = 205, read_data = 205
+# Checking read_data: expected write_data = 180, read_data = 180
+# Checking read_data: expected write_data =  49, read_data =  49
+# Checking read_data: expected write_data =  56, read_data =  56
+# Checking read_data: expected write_data = 219, read_data = 219
+# Checking read_data: expected write_data = 228, read_data = 228
+# Checking read_data: expected write_data = 226, read_data = 226
+# Checking read_data: expected write_data = 231, read_data = 231
+# Checking read_data: expected write_data =  20, read_data =  20
+# Checking read_data: expected write_data = 198, read_data = 198
+# Checking read_data: expected write_data = 198, read_data = 198
+# Checking read_data: expected write_data =  42, read_data =  42
+# Checking read_data: expected write_data =  35, read_data =  35
+# Checking read_data: expected write_data = 239, read_data = 239
+# Checking read_data: expected write_data =  67, read_data =  67
+# Checking read_data: expected write_data = 134, read_data = 134
+# Checking read_data: expected write_data =  33, read_data =  33
+# Checking read_data: expected write_data = 201, read_data = 201
+# Checking read_data: expected write_data =  44, read_data =  44
+# Checking read_data: expected write_data = 157, read_data = 157
+# Checking read_data: expected write_data = 196, read_data = 196
+# Checking read_data: expected write_data =  67, read_data =  67
+# Checking read_data: expected write_data =  34, read_data =  34
+# Checking read_data: expected write_data = 136, read_data = 136
+# Checking read_data: expected write_data =  62, read_data =  62
+# Checking read_data: expected write_data = 183, read_data = 183
+# Checking read_data: expected write_data = 184, read_data = 184
+# Checking read_data: expected write_data = 253, read_data = 253
+# Checking read_data: expected write_data =   1, read_data =   1
+# Checking read_data: expected write_data =  61, read_data =  61
+# Checking read_data: expected write_data =   8, read_data =   8
+# Checking read_data: expected write_data = 119, read_data = 119
+# Checking read_data: expected write_data =  49, read_data =  49
+# Checking read_data: expected write_data =  71, read_data =  71
+# Checking read_data: expected write_data = 244, read_data = 244
+# Checking read_data: expected write_data =   3, read_data =   3
+# Checking read_data: expected write_data = 163, read_data = 163
+# Checking read_data: expected write_data = 209, read_data = 209
+# Checking read_data: expected write_data = 168, read_data = 168
+# Checking read_data: expected write_data =  71, read_data =  71
+# Checking read_data: expected write_data =  86, read_data =  86
+# Checking read_data: expected write_data = 142, read_data = 142
+# Checking read_data: expected write_data =  46, read_data =  46
+# Checking read_data: expected write_data = 225, read_data = 225
+# Checking read_data: expected write_data =  33, read_data =  33
+# Checking read_data: expected write_data = 235, read_data = 235
+# Checking read_data: expected write_data = 107, read_data = 107
+# Checking read_data: expected write_data = 154, read_data = 154
+# Checking read_data: expected write_data = 198, read_data = 198
+# Checking read_data: expected write_data = 115, read_data = 115
+# Checking read_data: expected write_data = 157, read_data = 157
+# Checking read_data: expected write_data = 120, read_data = 120
+# Checking read_data: expected write_data = 232, read_data = 232
+# Checking read_data: expected write_data = 248, read_data = 248
+# Checking read_data: expected write_data = 115, read_data = 115
+# Checking read_data: expected write_data = 213, read_data = 213
+# Checking read_data: expected write_data = 148, read_data = 148
+# Checking read_data: expected write_data = 173, read_data = 173
+# Checking read_data: expected write_data =  71, read_data =  71
+# Checking read_data: expected write_data =  15, read_data =  15
+# Checking read_data: expected write_data = 222, read_data = 222
+# Checking read_data: expected write_data =   3, read_data =   3
+# Checking read_data: expected write_data = 169, read_data = 169
+# Checking read_data: expected write_data =  84, read_data =  84
+# Checking read_data: expected write_data = 124, read_data = 124
+# Checking read_data: expected write_data = 195, read_data = 195
+# Checking read_data: expected write_data =  67, read_data =  67
+# Checking read_data: expected write_data = 112, read_data = 112
+# Checking read_data: expected write_data = 201, read_data = 201
+# Checking read_data: expected write_data = 134, read_data = 134
+# Checking read_data: expected write_data =  50, read_data =  50
+# Checking read_data: expected write_data =  97, read_data =  97
+# Checking read_data: expected write_data =  35, read_data =  35
+# Checking read_data: expected write_data = 254, read_data = 254
+# Checking read_data: expected write_data = 197, read_data = 197
+# Checking read_data: expected write_data = 215, read_data = 215
+# Checking read_data: expected write_data = 206, read_data = 206
+# Checking read_data: expected write_data = 121, read_data = 121
+# Checking read_data: expected write_data = 165, read_data = 165
+# Checking read_data: expected write_data = 135, read_data = 135
+# Checking read_data: expected write_data = 229, read_data = 229
+# Checking read_data: expected write_data = 164, read_data = 164
+# Checking read_data: expected write_data = 244, read_data = 244
+# Checking read_data: expected write_data = 129, read_data = 129
+# Checking read_data: expected write_data = 101, read_data = 101
+# Checking read_data: expected write_data =  40, read_data =  40
+# Checking read_data: expected write_data = 146, read_data = 146
+# Checking read_data: expected write_data = 217, read_data = 217
+# Checking read_data: expected write_data =  72, read_data =  72
+# Checking read_data: expected write_data = 132, read_data = 132
+# Checking read_data: expected write_data = 129, read_data = 129
+# Checking read_data: expected write_data = 139, read_data = 139
+# Checking read_data: expected write_data = 150, read_data = 150
+# Checking read_data: expected write_data =   8, read_data =   8
+# Checking read_data: expected write_data = 187, read_data = 187
+# Checking read_data: expected write_data =  44, read_data =  44
+# Checking read_data: expected write_data =  49, read_data =  49
+# Checking read_data: expected write_data =  88, read_data =  88
+# Checking read_data: expected write_data = 171, read_data = 171
+# Checking read_data: expected write_data =  50, read_data =  50
+# Checking read_data: expected write_data = 251, read_data = 251
+# Checking read_data: expected write_data =  52, read_data =  52
+# Checking read_data: expected write_data = 241, read_data = 241
+# Checking read_data: expected write_data = 203, read_data = 203
+# Checking read_data: expected write_data = 194, read_data = 194
+# Checking read_data: expected write_data = 137, read_data = 137
+# Checking read_data: expected write_data =  58, read_data =  58
+# Checking read_data: expected write_data =  48, read_data =  48
+# Checking read_data: expected write_data = 173, read_data = 173
+# Checking read_data: expected write_data = 158, read_data = 158
+# Checking read_data: expected write_data = 221, read_data = 221
+# Checking read_data: expected write_data =  16, read_data =  16
+# Checking read_data: expected write_data = 203, read_data = 203
+# Checking read_data: expected write_data = 156, read_data = 156
+# Checking read_data: expected write_data = 146, read_data = 146
+# Checking read_data: expected write_data = 207, read_data = 207
+# Checking read_data: expected write_data = 197, read_data = 197
+# Checking read_data: expected write_data = 237, read_data = 237
+# Checking read_data: expected write_data = 248, read_data = 248
+# Checking read_data: expected write_data = 255, read_data = 255
+# Checking read_data: expected write_data = 194, read_data = 194
+# Checking read_data: expected write_data =  44, read_data =  44
+# Checking read_data: expected write_data = 176, read_data = 176
+# Checking read_data: expected write_data = 228, read_data = 228
+# Checking read_data: expected write_data = 103, read_data = 103
+# Checking read_data: expected write_data =  32, read_data =  32
+# Checking read_data: expected write_data =   3, read_data =   3
+# Checking read_data: expected write_data = 141, read_data = 141
+# Checking read_data: expected write_data =  37, read_data =  37
+# Checking read_data: expected write_data =  24, read_data =  24
+# Checking read_data: expected write_data = 123, read_data = 123
+# Checking read_data: expected write_data =  70, read_data =  70
+# Checking read_data: expected write_data =  52, read_data =  52
+# Checking read_data: expected write_data = 151, read_data = 151
+# Checking read_data: expected write_data = 225, read_data = 225
+# Checking read_data: expected write_data = 208, read_data = 208
+# Checking read_data: expected write_data =  64, read_data =  64
+# Checking read_data: expected write_data = 197, read_data = 197
+# Checking read_data: expected write_data = 156, read_data = 156
+# Checking read_data: expected write_data = 178, read_data = 178
+# Checking read_data: expected write_data =  23, read_data =  23
+# Checking read_data: expected write_data = 166, read_data = 166
+# Checking read_data: expected write_data = 185, read_data = 185
+# Checking read_data: expected write_data =  84, read_data =  84
+# Checking read_data: expected write_data =  96, read_data =  96
+# Checking read_data: expected write_data =  89, read_data =  89
+# Checking read_data: expected write_data =  63, read_data =  63
+# Checking read_data: expected write_data =  90, read_data =  90
+# Checking read_data: expected write_data = 188, read_data = 188
+# Checking read_data: expected write_data =  59, read_data =  59
+# Checking read_data: expected write_data = 177, read_data = 177
+# Checking read_data: expected write_data =   1, read_data =   1
+# Checking read_data: expected write_data =  28, read_data =  28
+# Checking read_data: expected write_data = 231, read_data = 231
+# Checking read_data: expected write_data = 140, read_data = 140
+# Checking read_data: expected write_data =  73, read_data =  73
+# Checking read_data: expected write_data = 107, read_data = 107
+# Checking read_data: expected write_data = 253, read_data = 253
+# Checking read_data: expected write_data = 239, read_data = 239
+# Checking read_data: expected write_data =  85, read_data =  85
+# Checking read_data: expected write_data =  77, read_data =  77
+# Checking read_data: expected write_data =  60, read_data =  60
+# Checking read_data: expected write_data = 251, read_data = 251
+# Checking read_data: expected write_data = 135, read_data = 135
+# Checking read_data: expected write_data =  45, read_data =  45
+# Checking read_data: expected write_data =  85, read_data =  85
+# Checking read_data: expected write_data = 142, read_data = 142
+# Checking read_data: expected write_data = 208, read_data = 208
+# Checking read_data: expected write_data =  27, read_data =  27
+# Checking read_data: expected write_data =  35, read_data =  35
+# Checking read_data: expected write_data =  98, read_data =  98
+# Checking read_data: expected write_data = 240, read_data = 240
+# Checking read_data: expected write_data =  94, read_data =  94
+# Checking read_data: expected write_data =  99, read_data =  99
+# Checking read_data: expected write_data = 192, read_data = 192
+# Checking read_data: expected write_data =  38, read_data =  38
+# Checking read_data: expected write_data =  82, read_data =  82
+# Checking read_data: expected write_data = 175, read_data = 175
+# Checking read_data: expected write_data =  92, read_data =  92
+# Checking read_data: expected write_data = 172, read_data = 172
+# Checking read_data: expected write_data = 136, read_data = 136
+# Checking read_data: expected write_data =  93, read_data =  93
+# Checking read_data: expected write_data = 174, read_data = 174
+# Checking read_data: expected write_data =  58, read_data =  58
+# Checking read_data: expected write_data =  90, read_data =  90
+# Checking read_data: expected write_data = 248, read_data = 248
+# Checking read_data: expected write_data = 246, read_data = 246
+# Checking read_data: expected write_data = 154, read_data = 154
+# Checking read_data: expected write_data = 229, read_data = 229
+# Checking read_data: expected write_data = 112, read_data = 112
+# Checking read_data: expected write_data =  13, read_data =  13
+# Checking read_data: expected write_data = 176, read_data = 176
+# Checking read_data: expected write_data =  80, read_data =  80
+# Checking read_data: expected write_data = 224, read_data = 224
+# Checking read_data: expected write_data =  46, read_data =  46
+# Checking read_data: expected write_data = 136, read_data = 136
+# Checking read_data: expected write_data = 230, read_data = 230
+# Checking read_data: expected write_data = 197, read_data = 197
+# Checking read_data: expected write_data = 188, read_data = 188
+# Checking read_data: expected write_data = 129, read_data = 129
+# Checking read_data: expected write_data = 143, read_data = 143
+# Checking read_data: expected write_data = 119, read_data = 119
+# Checking read_data: expected write_data =  34, read_data =  34
+# Checking read_data: expected write_data = 126, read_data = 126
+# Checking read_data: expected write_data = 139, read_data = 139
+# Checking read_data: expected write_data =  61, read_data =  61
+# Checking read_data: expected write_data = 157, read_data = 157
+# Checking read_data: expected write_data =  41, read_data =  41
+# Checking read_data: expected write_data = 181, read_data = 181
+# Checking read_data: expected write_data =   6, read_data =   6
+# Checking read_data: expected write_data =  24, read_data =  24
+# Checking read_data: expected write_data =  46, read_data =  46
+# Checking read_data: expected write_data = 189, read_data = 189
+# Checking read_data: expected write_data = 243, read_data = 243
+# Checking read_data: expected write_data = 203, read_data = 203
+# Checking read_data: expected write_data =  54, read_data =  54
+# Checking read_data: expected write_data =  74, read_data =  74
+# Checking read_data: expected write_data = 184, read_data = 184
+# Checking read_data: expected write_data =  67, read_data =  67
+# Checking read_data: expected write_data = 219, read_data = 219
+# Checking read_data: expected write_data =  28, read_data =  28
+# Checking read_data: expected write_data = 130, read_data = 130
+# Checking read_data: expected write_data = 162, read_data = 162
+# Checking read_data: expected write_data = 254, read_data = 254
+# Checking read_data: expected write_data =  43, read_data =  43
+# Checking read_data: expected write_data =  26, read_data =  26
+# Checking read_data: expected write_data =  54, read_data =  54
+# Checking read_data: expected write_data =  54, read_data =  54
+# Checking read_data: expected write_data =  92, read_data =  92
+# Checking read_data: expected write_data = 227, read_data = 227
+# Checking read_data: expected write_data = 233, read_data = 233
+# Checking read_data: expected write_data = 205, read_data = 205
+# Checking read_data: expected write_data = 107, read_data = 107
+# Checking read_data: expected write_data =  34, read_data =  34
+# Checking read_data: expected write_data =  43, read_data =  43
+# Checking read_data: expected write_data = 217, read_data = 217
+# Checking read_data: expected write_data = 152, read_data = 152
+# Checking read_data: expected write_data = 175, read_data = 175
+# Checking read_data: expected write_data = 117, read_data = 117
+# Checking read_data: expected write_data = 107, read_data = 107
+# Checking read_data: expected write_data = 141, read_data = 141
+# Checking read_data: expected write_data = 163, read_data = 163
+# Checking read_data: expected write_data =  24, read_data =  24
+# Checking read_data: expected write_data = 238, read_data = 238
+# Checking read_data: expected write_data = 161, read_data = 161
+# Checking read_data: expected write_data =  60, read_data =  60
+# Checking read_data: expected write_data = 166, read_data = 166
+# Checking read_data: expected write_data = 201, read_data = 201
+# Checking read_data: expected write_data = 193, read_data = 193
+# Checking read_data: expected write_data = 150, read_data = 150
+# Checking read_data: expected write_data =  15, read_data =  15
+# Checking read_data: expected write_data = 189, read_data = 189
+# Checking read_data: expected write_data = 169, read_data = 169
+# Checking read_data: expected write_data =  70, read_data =  70
+# Checking read_data: expected write_data =  75, read_data =  75
+# Checking read_data: expected write_data = 185, read_data = 185
+# Checking read_data: expected write_data = 118, read_data = 118
+# Checking read_data: expected write_data =  98, read_data =  98
+# Checking read_data: expected write_data = 129, read_data = 129
+# Checking read_data: expected write_data =  80, read_data =  80
+# Checking read_data: expected write_data = 185, read_data = 185
+# Checking read_data: expected write_data = 153, read_data = 153
+# Checking read_data: expected write_data = 171, read_data = 171
+# Checking read_data: expected write_data =  24, read_data =  24
+# Checking read_data: expected write_data = 235, read_data = 235
+# Checking read_data: expected write_data =  38, read_data =  38
+# Checking read_data: expected write_data = 213, read_data = 213
+# Checking read_data: expected write_data =  79, read_data =  79
+# Checking read_data: expected write_data = 253, read_data = 253
+# Checking read_data: expected write_data = 200, read_data = 200
+# Checking read_data: expected write_data = 175, read_data = 175
+# Checking read_data: expected write_data =  61, read_data =  61
+# Checking read_data: expected write_data =  15, read_data =  15
+# Checking read_data: expected write_data =  84, read_data =  84
+# Checking read_data: expected write_data = 211, read_data = 211
+# Checking read_data: expected write_data = 251, read_data = 251
+# Checking read_data: expected write_data =  76, read_data =  76
+# Checking read_data: expected write_data =   9, read_data =   9
+# Checking read_data: expected write_data =  26, read_data =  26
+# Checking read_data: expected write_data = 168, read_data = 168
+# Checking read_data: expected write_data = 210, read_data = 210
+# Checking read_data: expected write_data =  54, read_data =  54
+# Checking read_data: expected write_data = 114, read_data = 114
+# Checking read_data: expected write_data =  13, read_data =  13
+# Checking read_data: expected write_data =  58, read_data =  58
+# Checking read_data: expected write_data =  97, read_data =  97
+# Checking read_data: expected write_data = 154, read_data = 154
+# Checking read_data: expected write_data = 164, read_data = 164
+# Checking read_data: expected write_data = 136, read_data = 136
+# Checking read_data: expected write_data =  58, read_data =  58
+# Checking read_data: expected write_data = 100, read_data = 100
+# Checking read_data: expected write_data =  25, read_data =  25
+# Checking read_data: expected write_data =  22, read_data =  22
+# Checking read_data: expected write_data =  37, read_data =  37
+# Checking read_data: expected write_data = 153, read_data = 153
+# Checking read_data: expected write_data =  60, read_data =  60
+# Checking read_data: expected write_data = 207, read_data = 207
+# Checking read_data: expected write_data = 180, read_data = 180
+# Checking read_data: expected write_data =  14, read_data =  14
+# Checking read_data: expected write_data = 130, read_data = 130
+# Checking read_data: expected write_data = 138, read_data = 138
+# Checking read_data: expected write_data = 152, read_data = 152
+# Checking read_data: expected write_data =  31, read_data =  31
+# Checking read_data: expected write_data = 101, read_data = 101
+# Checking read_data: expected write_data =  10, read_data =  10
+# Checking read_data: expected write_data = 218, read_data = 218
+# Checking read_data: expected write_data = 183, read_data = 183
+# Checking read_data: expected write_data = 236, read_data = 236
+# Checking read_data: expected write_data =  96, read_data =  96
+# Checking read_data: expected write_data = 239, read_data = 239
+# Checking read_data: expected write_data = 238, read_data = 238
+# Checking read_data: expected write_data =  34, read_data =  34
+# Checking read_data: expected write_data =  70, read_data =  70
+# Checking read_data: expected write_data = 106, read_data = 106
+# Checking read_data: expected write_data =  78, read_data =  78
+# Checking read_data: expected write_data =  98, read_data =  98
+# Checking read_data: expected write_data = 225, read_data = 225
+# Checking read_data: expected write_data =  37, read_data =  37
+# Checking read_data: expected write_data = 101, read_data = 101
+# Checking read_data: expected write_data =  90, read_data =  90
+# Checking read_data: expected write_data =  54, read_data =  54
+# Checking read_data: expected write_data = 182, read_data = 182
+# Checking read_data: expected write_data =  94, read_data =  94
+# Checking read_data: expected write_data =  66, read_data =  66
+# Checking read_data: expected write_data = 223, read_data = 223
+# Checking read_data: expected write_data = 107, read_data = 107
+# Checking read_data: expected write_data = 120, read_data = 120
+# Checking read_data: expected write_data = 129, read_data = 129
+# Checking read_data: expected write_data = 149, read_data = 149
+# Checking read_data: expected write_data =  84, read_data =  84
+# Checking read_data: expected write_data = 197, read_data = 197
+# Checking read_data: expected write_data =  73, read_data =  73
+# Checking read_data: expected write_data = 164, read_data = 164
+# Checking read_data: expected write_data = 147, read_data = 147
+# Checking read_data: expected write_data = 106, read_data = 106
+# Checking read_data: expected write_data = 222, read_data = 222
+# Checking read_data: expected write_data =  15, read_data =  15
+# Checking read_data: expected write_data = 253, read_data = 253
+# Checking read_data: expected write_data = 118, read_data = 118
+# Checking read_data: expected write_data =  25, read_data =  25
+# Checking read_data: expected write_data = 144, read_data = 144
+# Checking read_data: expected write_data = 139, read_data = 139
+# Checking read_data: expected write_data = 105, read_data = 105
+# Checking read_data: expected write_data = 163, read_data = 163
+# Checking read_data: expected write_data =  85, read_data =  85
+# Checking read_data: expected write_data = 234, read_data = 234
+# Checking read_data: expected write_data = 187, read_data = 187
+# Checking read_data: expected write_data =  84, read_data =  84
+# Checking read_data: expected write_data = 245, read_data = 245
+# Checking read_data: expected write_data = 236, read_data = 236
+# Checking read_data: expected write_data =  68, read_data =  68
+# Checking read_data: expected write_data =  36, read_data =  36
+# Checking read_data: expected write_data =  52, read_data =  52
+# ** Note: $finish    : testbench.sv(77)
+#    Time: 92750 ns  Iteration: 1  Instance: /async_fifo_tb
+# 1
+# Break in Module async_fifo_tb at testbench.sv line 77
